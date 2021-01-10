@@ -2,19 +2,19 @@ name: PickupMoney
 main: com.gmail.vkhanh234.PickupMoney.PickupMoney
 author: KickVN
 version: 1.6
-softdepend: [Vault]
+softdepend: [ Vault ]
 commands:
-   pickupmoney:
-      description: Show PickupMoney's Command.
-      usage: /pum
-      aliases: [pum, pmoney]
+  pickupmoney:
+    description: Show PickupMoney's Command.
+    usage: /pum
+    aliases: [ pum, pmoney ]
 permissions:
-    PickupMoney.command:
-        description: Allows you to use normal command.
-        default: op
-    PickupMoney.admincmd:
-        description: Allows you to use admin's command.
-        default: op
-    PickupMoney.pickup:
-        description: Allows you to pick up money.
-        default: op
+  PickupMoney.command:
+    description: Allows you to use normal command.
+    default: op
+  PickupMoney.admincmd:
+    description: Allows you to use admin's command.
+    default: op
+  PickupMoney.pickup:
+    description: Allows you to pick up money.
+    default: op

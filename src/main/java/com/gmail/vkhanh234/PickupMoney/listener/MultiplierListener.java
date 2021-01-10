@@ -1,4 +1,4 @@
-package com.gmail.vkhanh234.PickupMoney.Listener;
+package com.gmail.vkhanh234.PickupMoney.listener;
 
 import com.gmail.vkhanh234.PickupMoney.PickupMoney;
 import org.bukkit.event.EventHandler;
@@ -8,14 +8,15 @@ import org.bukkit.event.player.PlayerJoinEvent;
 /**
  * Created by Admin on 6/9/2015.
  */
-public class MultiplierListener implements Listener{
+public class MultiplierListener implements Listener {
     private final PickupMoney plugin;
+
     public MultiplierListener(PickupMoney plugin) {
         this.plugin = plugin;
     }
 
     @EventHandler
-    public void onLogin(PlayerJoinEvent e){
-        plugin.loadMultiplier(e.getPlayer());
+    public void onLogin(PlayerJoinEvent event) {
+        plugin.loadMultiplier(event.getPlayer());
     }
 }
